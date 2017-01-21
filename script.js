@@ -26,7 +26,7 @@ $(document).ready(function(){
         $('.section').each(function () {
             var fromTop = $(this).offset().top;
             console.log(fromTop);
-            if (window.scrollY >= (fromTop + 60)) {
+            if (window.scrollY >= (fromTop )) {
                 $(this).addClass('fixPoint');
             } else {
                 $(this).removeClass('fixPoint');
