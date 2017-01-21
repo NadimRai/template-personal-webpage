@@ -115,3 +115,11 @@ body{
     min-height: 200px;
 }
 /******** End of Section **********/
+/********* Footer *****************/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+/*********** End of Footer **********/
