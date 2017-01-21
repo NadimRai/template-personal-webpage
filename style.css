@@ -62,8 +62,8 @@ body{
 
 /******** Section *************/
 .section {
-    height: 100vh;
-    min-height: 800px;
+    min-height: 100vh;
+    
     overflow: hidden;
     padding-top: 60px;
     /*position: relative;*/
@@ -91,11 +91,11 @@ body{
 
 #profile {
     
-    
+     background-image: url('http://lorempixel.com/1200/600/sports');
 }
 
 #skills {
-    
+    background-image: url('http://lorempixel.com/1200/600/city');
     background-color: darkmagenta;
 }
 
@@ -126,7 +126,9 @@ footer {
     height: 200px;
 }
 /*********** End of Footer **********/
-
+.fixPoint {
+    background-attachment: fixed;
+}
 /*********** media queries ***********/
 @media screen and (max-width:640px) {
     #menu .navicon {
@@ -134,7 +136,7 @@ footer {
         margin-right: 15px;
     }
     #menu nav {
-        /* display: none;*/
+         display: none;
         width: 100%;
     }
     #menu nav ul li {
