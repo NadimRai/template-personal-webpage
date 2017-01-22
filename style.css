@@ -60,7 +60,27 @@ body{
     margin-right: 10px;
 }
 /***** End of Navigation Bar **********/
+.fa-minus, .fa-circle-o{
+     color:#f63;
+ }
 
+section .intro-text  {
+    margin:15% auto;  
+    /*border: 1px solid black;*/
+    width:40%;
+    
+
+}
+section .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  color:white;
+  font-style: italic;
+  text-align: center;
+  margin-left: 1px;
+}
 /******** Section *************/
 .section {
     min-height: 100vh;
@@ -75,7 +95,7 @@ body{
 
 .section h2 {
     font-family: 'Indie Flower', cursive;
-    background-color: white;
+    color: #eaeaea;
     padding: 5px;
     font-size: 2em;
     text-transform: uppercase;
@@ -93,11 +113,11 @@ body{
 #profile {
     
      /*background-image: url('http://lorempixel.com/1200/600/sports');*/
-     background-image: url('assets/images/laptop.jpeg');
+     background-image: url('assets/images/bg.jpg');
 }
 
 #skills {
-    background-image: url('http://lorempixel.com/1200/600/city');
+    background-image: url('assets/images/team.jpeg');
     background-color: darkmagenta;
 }
 
@@ -126,12 +146,12 @@ section#contact {
   background: url('assets/images/mapnight.jpeg');
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 auto;
+ 
   
   
 }
-#contact form{
-    margin:0 auto;
+#contact .form{
+    margin:20px auto;
 }
 
 section#contact .form-group {
@@ -151,8 +171,9 @@ section#contact .form-group textarea.form-control {
 section#contact .form-control {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: normal;
   color:#222222;
+  font-size: 16px;
 }
 
 .btn-xl {
