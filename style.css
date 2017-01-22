@@ -10,6 +10,7 @@ body{
     margin: 0 auto;
 }*/
 /******** Navigation Bar ***********/
+
 #header {
     margin: 0 auto;
     max-width: 1200px;
@@ -19,8 +20,7 @@ body{
     top: 0px;
     right: 0px;
     left: 0px;
-    border: 1px solid black;
-    background-color: #ddd;
+    
 }
 #menu .navicon {
     display: none;
@@ -49,6 +49,8 @@ body{
     padding: 10px;
     background-color: #222;
     color: #ddd;
+
+
 }
 
 #menu nav li a:hover {
@@ -60,12 +62,55 @@ body{
     margin-right: 10px;
 }
 /***** End of Navigation Bar **********/
-.fa-minus, .fa-circle-o{
+
+/******** Section *************/
+.section {
+    min-height: 100vh;
+    
+    overflow: hidden;
+    /*padding-top: 60px;*/
+    /*position: relative;*/
+    
+    background-size: cover;
+    background-position: center center;
+}
+
+.section h2 {
+    font-family: 'Indie Flower', cursive;
+    color: #000;
+    padding: 2px;
+    font-size: 5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section article {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+/********* End of Section ******************/
+/************ Section Cover *********************/
+#cover {
+     background-image: url('assets/images/bg.jpg');
+     background-image: cover;
+}
+.responsive-text{
+    display: none;
+}
+
+/*************** End of Cover **************/
+
+/******* Section Profile ************/
+.fa-html5, .fa-css3{
      color:#f63;
  }
 
 section .intro-text  {
-    margin:15% auto;  
+    margin:20% auto;  
     /*border: 1px solid black;*/
     width:40%;
     
@@ -81,66 +126,100 @@ section .intro-heading {
   text-align: center;
   margin-left: 1px;
 }
-/******** Section *************/
-.section {
-    min-height: 100vh;
-    
-    overflow: hidden;
-    padding-top: 60px;
-    /*position: relative;*/
-    border: 1px solid black;
-    background-size: cover;
-    background-position: center center;
+
+
+/******** End Section Profile ****************/
+
+/*********** Section Skills *****************/
+#skills{
+    background-image: url('assets/images/black.jpg');
+    padding-top:30px;
 }
 
-.section h2 {
-    font-family: 'Indie Flower', cursive;
-    color: #eaeaea;
-    padding: 5px;
+#skills{
+    border-top:1px solid #f63;
+}
+.skills-row{
+    padding-top:60px;
+    width:80%;
+    margin: 0 auto;
+    color:#eaeaea;
     font-size: 2em;
-    text-transform: uppercase;
-    text-align: center;
+
 }
 
-.section article {
-    background-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 20px;
-    margin: 0 10px;
+.skills-list{
+    list-style: none;
 }
 
-#profile {
-    
-     /*background-image: url('http://lorempixel.com/1200/600/sports');*/
-     background-image: url('assets/images/bg.jpg');
-}
-
-#skills {
-    background-image: url('assets/images/team.jpeg');
-    background-color: darkmagenta;
-}
-
-#projects {
-    background-color: darkblue;
-    /*background-image: url('assets/images/team.jpeg');*/
-}
-
-#contact {
-    background-color: darkgray;
-}
-
-#projects ul {
-    padding: 10px;
-    list-style-type: none;
-}
-
-#projects ul li {
+.skills-title{
     display: inline-block;
-    width: 48%;
-    min-height: 200px;
+    width:60%;
 }
-/******** End of Section **********/
+
+.glyphicon {
+    transition: all 0.3s;
+}
+
+.filled {
+    color: #f63;
+}
+
+.grey{
+    color:lightgrey;
+}
+
+
+/*********** End of Skills *******************/
+
+
+/************* Section Projects ********************/
+.fa-bell{
+   color:#f63; 
+}
+
+.project-row{
+  padding:25px 0;
+}
+.area{
+  position: relative;
+}
+
+.area:hover .mask {
+  display: block;
+  cursor: pointer;
+  opacity: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-40%);
+  
+}
+
+.mask {
+  position: absolute;
+  background-color: rgba(255, 153, 0,0.8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+}
+
+.mask p {
+  color: #fff;
+  font-weight: 600;
+}
+
+.mask i {
+  font-size: 60px;
+  color: #fff;
+}
+
+/*************** End of Section Projects ******************/
+
 /******** Section Contact **************/
 section#contact {
   background: url('assets/images/mapnight.jpeg');
@@ -239,6 +318,22 @@ ul.social-buttons li a:active {
     #projects ul li {
         width: 100%;
     }
+    /****** Cover ******/
+    .responsive-text{
+        display:block;
+        border:4px dotted #eaeaea;
+        border-radius: 8px;
+        width:50%;
+        margin:60% auto;
+        font-size: 80px;
+        padding-top: 15px;
+        padding-left: 10px;
+
+    }
+    .intro-text{
+        display: none;
+    }
+    
 }
 
 /********* End of media queries **********/
