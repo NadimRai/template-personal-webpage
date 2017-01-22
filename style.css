@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body{
 	font-family: 'Roboto', sans-serif;
 }
-#wrapper {
+/*#wrapper {
     max-width: 1200px;
     margin: 0 auto;
-}
+}*/
 /******** Navigation Bar ***********/
 #header {
     margin: 0 auto;
@@ -120,37 +121,84 @@ body{
     min-height: 200px;
 }
 /******** End of Section **********/
-
-/*********** Contact Form ***********/
-form{
+/******** Section Contact **************/
+section#contact {
+  background: url('assets/images/mapnight.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  
+  
+}
+#contact form{
     margin:0 auto;
-    max-width: 600px;
-    padding: 1em;
-    border:1px solid #ccc;
-    border-radius: 1em;
 }
 
-label{
-    display: block;
-    width: 100%;
-    text-align: left;
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+section#contact .form-group input.form-control {
+  height: auto;
+}
+section#contact .form-group textarea.form-control {
+  height: 236px;
 }
 
-input, textarea{
-    width: 60%;
-    border: 1px solid #777;
-    font-size: 1em;
+section#contact .form-control {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:#222222;
 }
 
-input:focus, textarea:focus{
-    border-color: red;
+.btn-xl {
+  color: white;
+  background-color: #f63;
+  border-color: #f63;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 20px 40px;
 }
-/********* Footer *****************/
+/********* Footer *************/
 footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    height: 200px;
+  padding: 25px 0;
+  text-align: center;
+  margin:0;
+}
+footer span.copyright {
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:18px;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #fed136;
 }
 /*********** End of Footer **********/
 
