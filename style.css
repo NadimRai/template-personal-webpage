@@ -20,6 +20,7 @@ body{
     top: 0px;
     right: 0px;
     left: 0px;
+    z-index: 1000;
     
 }
 #menu .navicon {
@@ -102,9 +103,6 @@ body{
     display: none;
 }
 
-/*************** End of Cover **************/
-
-/******* Section Profile ************/
 .fa-html5, .fa-css3{
      color:#f63;
  }
@@ -126,8 +124,29 @@ section .intro-heading {
   text-align: center;
   margin-left: 1px;
 }
+/********** End of Cover ************/
 
+/************* Section Profile ********/
+.profile-row{
+    
+    width:80%;
+    margin: 120px auto;
+    font-size: 16px;
+    color: #222222;
 
+}
+.profile-row h3{
+    text-align: center;
+    font-size: 28px;
+    color:#f63;
+    padding-bottom: 10px;
+}
+
+.profile-row img{
+    margin-top: -60px;
+    /*border:1px solid #222222;*/
+    margin-left: 20px;
+}
 /******** End Section Profile ****************/
 
 /*********** Section Skills *****************/
@@ -138,13 +157,16 @@ section .intro-heading {
 
 #skills{
     border-top:1px solid #f63;
+    border-bottom: 1px solid #f63;
 }
 .skills-row{
     padding-top:60px;
-    width:80%;
+    width:70%;
     margin: 0 auto;
-    color:#eaeaea;
-    font-size: 2em;
+    color: #fcfcfc;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 200%;
 
 }
 
@@ -157,16 +179,13 @@ section .intro-heading {
     width:60%;
 }
 
-.glyphicon {
-    transition: all 0.3s;
-}
 
 .filled {
     color: #f63;
 }
 
 .grey{
-    color:lightgrey;
+    color:#fcfcfc;
 }
 
 
@@ -174,9 +193,6 @@ section .intro-heading {
 
 
 /************* Section Projects ********************/
-.fa-bell{
-   color:#f63; 
-}
 
 .project-row{
   padding:25px 0;
@@ -225,6 +241,7 @@ section#contact {
   background: url('assets/images/mapnight.jpeg');
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 50px;
  
   
   
@@ -266,21 +283,22 @@ section#contact .form-control {
   font-size: 18px;
   padding: 20px 40px;
 }
-/********* Footer *************/
-footer {
-  padding: 25px 0;
+/********* Social Row *************/
+.social-row {
+  padding: 25px 0 25px 35px;
   text-align: center;
-  margin:0;
+  margin:50px auto;
+
+  width:50%;
 }
-footer span.copyright {
+ span.copyright {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:18px;
+  color: #eaeaea;
 }
 
-ul.social-buttons {
-  margin-bottom: 0;
-}
+
 ul.social-buttons li a {
   display: block;
   background-color: #222222;
@@ -300,7 +318,7 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #fed136;
 }
-/*********** End of Footer **********/
+/*********** End of Social Row **********/
 
 /*********** media queries ***********/
 @media screen and (max-width:640px) {
@@ -333,6 +351,29 @@ ul.social-buttons li a:active {
     .intro-text{
         display: none;
     }
+    /****** End Cover *********/
+    /******** profile ********/
+    .profile-row{
+        width:100%;
+        border:3px solid #f63;
+        padding:20px;
+    }
+
+    .profile-row img{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .skills-row{
+        width: 100%;
+        font-size: 19px;
+        padding-top: -50px;
+    }
+
+    .social-row{
+        width: 100%;
+    }
+
+
     
 }
 
