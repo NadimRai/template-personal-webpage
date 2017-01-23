@@ -72,8 +72,6 @@ body{
     /*padding-top: 60px;*/
     /*position: relative;*/
     
-    background-size: cover;
-    background-position: center center;
 }
 
 .section h2 {
@@ -192,7 +190,7 @@ section .intro-heading {
 
 /************* Section Projects ********************/
 
-.project-row{
+./*project-row{
   padding:25px 0;
 }
 .area{
@@ -232,11 +230,13 @@ section .intro-heading {
   color: #fff;
 }
 
+*/
+
 /*************** End of Section Projects ******************/
 
 /******** Section Contact **************/
 section#contact {
-  /*background: url('assets/images/contact1.jpg');*/
+  
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 50px;
