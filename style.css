@@ -236,16 +236,34 @@ section .intro-heading {
 
 /******** Section Contact **************/
 section#contact {
-  /*background: url('assets/images/mapnight.jpeg');*/
+  /*background: url('assets/images/contact1.jpg');*/
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 50px;
-  border-top:1px solid red;
+  background: #434242; 
+}
+
+.contact-title{
+ /* border:1px solid red;*/
+  width: 60%;
+  margin: 40px auto;
+}
+.contact-container{
+  /*border:1px solid red;*/
+  margin: 150px auto;
+  width:85%;
+
 
 }
 .fa-hand-o-down{
-  margin-left: 25px;
+  margin-left: 75px;
   color:#f63;
+  font-size: 30px;
+}
+.btn{
+  padding:20px 35px 20px 35px;
+  border:none;
+  font-size: 20px;
 }
 .modal-content h2{
   color: white;
@@ -294,21 +312,6 @@ section#contact {
   
  }
 
-/********* Social Row *************/
-.social-row {
-  padding: 25px 0 25px 35px;
-  text-align: center;
-  margin:50px auto;
-
-  width:50%;
-}
- span.copyright {
-  line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:18px;
-  color: #222222;
-}
-
 
 ul.social-buttons li a {
   display: block;
@@ -323,6 +326,7 @@ ul.social-buttons li a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  text-align: center;
 }
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
@@ -380,8 +384,8 @@ ul.social-buttons li a:active {
         padding-top: -50px;
     }
 
-    .social-row{
-        width: 100%;
+    .contact-form-fluid{
+      width:100%;
     }
 
 
