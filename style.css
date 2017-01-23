@@ -146,10 +146,12 @@ section .intro-heading {
 /******** End Section Profile ****************/
 
 /*********** Section Skills *****************/
+.skills-section{
+  margin-top: 40px;
+}
 #skills{
     background-image: url('assets/images/black.jpg');
-    padding-top:30px;
-}
+   }
 
 #skills{
     border-top:1px solid #f63;
@@ -183,55 +185,68 @@ section .intro-heading {
 .grey{
     color:#fcfcfc;
 }
-
-
 /*********** End of Skills *******************/
 
 
 /************* Section Projects ********************/
-
-./*project-row{
-  padding:25px 0;
+.project-section{
+  margin-top:70px;
 }
-.area{
-  position: relative;
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border-color: #f33;
+    opacity: 1;
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 300px;
 }
 
-.area:hover .mask {
-  display: block;
-  cursor: pointer;
-  opacity: 100;
-  transition: all 0.3s ease-in-out;
+.carousel-inner img{
+  border:4px solid #f63;
+  border-radius: 4px;
 }
 
-.vertical-align {
-  position: relative;
-  top: 50%;
-  transform: translateY(-40%);
-  
+.fa-chevron-left, .fa-chevron-right{
+  color: #f63;
 }
-
-.mask {
-  position: absolute;
-  background-color: rgba(255, 153, 0,0.8);
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  opacity: 0;
-}
-
-.mask p {
-  color: #fff;
-  font-weight: 600;
-}
-
-.mask i {
-  font-size: 60px;
-  color: #fff;
-}
-
-*/
-
 /*************** End of Section Projects ******************/
 
 /******** Section Contact **************/
@@ -421,7 +436,7 @@ ul.social-buttons li a:active {
   height: 40px;
   display: block;
   margin-bottom: 7px;
-  background: #26456e  url(assets/images/up-arrow.png) no-repeat center center;
+  background: #f63  url(assets/images/up-arrow.png) no-repeat center center;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -432,4 +447,4 @@ ul.social-buttons li a:active {
 #back-top a:hover span {
   background-color: #00bfab;
 }
-
+/************************************/
