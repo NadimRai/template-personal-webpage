@@ -221,54 +221,116 @@
         </section>
 
         <section id="contact" class="section">
-            <h2>Contact</h2>
-            <div class="container-fluid">
-                <div class="row">
-                    <form class="form">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Your Name" >
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Your Phone">
+          <h2>Contact</h2>
+            <!-- <script src="https://use.fontawesome.com/cb2d0db4c2.js"></script> -->
+            <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+          <div class="container">
+            <div class="row">
+              <!-- <div class="col-md-2">
+            </div> -->
+            <div class="col-md-12">
+              <button class="btn btn-info" data-target="#exampleModal" data-toggle="modal"  type="button"><i aria-hidden="true" class="fa fa-angle-double-right">
+              </i>Contac us
+              </button>
+              <div aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button aria-label="Close" class="close" data-dismiss="modal" data-toggle="tooltip" title="Exit" type="button">
+                              <span aria-hidden="true">
+                                  ×
+                              </span>
+                          </button>
+                          <h4 class="modal-title" id="exampleModalLabel">
+                              <i class="fa fa-envelope-o">
+                              </i>
+                          </h4>
+                      </div><!-- End of Modal-header -->
+                        <div class="modal-body">
+                          <div class="row">
+                              <div class="col-md-12 text-center">
+                                  <h2 class="contact-title" color="white">
+                                      How can I help you?
+                                  </h2>
+                              </div>
+                          </div><!-- End of Row -->
+                          <div class="row">
+                            <div class="col-sm-12">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <div class="input-group margin-bottom-sm">
+                                                <span class="input-group-addon">
+                                                    <i aria-hidden="true" class="fa fa-envelope-o fa-fw">
+                                                    </i>
+                                                </span>
+                                                <input class="form-control" placeholder="Email address" type="text">
+                                                </input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <div class="input-group margin-bottom-sm">
+                                                <span class="input-group-addon">
+                                                    <i aria-hidden="true" class="fa fa-question fa-fw">
+                                                    </i>
+                                                </span>
+                                                <input class="form-control" placeholder="Subject" type="text">
+                                                </input>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-6 col-sm-offset-3">
+                                            <div class="input-group margin-bottom-sm">
+                                                <span class="input-group-addon">
+                                                    <i aria-hidden="true" class="fa fa-pencil fa-fw">
+                                                    </i>
+                                                </span>
+                                                <textarea class="form-control" rows="3">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div> 
+                          </div><!-- End of Row -->
+                      </div>
+                      <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3 text-center">
+                                <button class="btn btn-primary " id="btn-send-message" type="button">
+                                    Send message
+                                </button>
                             </div>
                         </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 text-center">
-                            <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
-                        </div>     
-                    </form>
-                </div><!-- End of Row -->
-                
-                    <div class="row social-row">
-                        <div class="col-md-2">
-                            <span class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>2017</span>
-                        </div>
-
-                        <div class="col-md-10">
-                            <ul class="list-inline social-buttons">
-                              <li><a href="#"><i class="fa fa-twitter"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-facebook"></i></a>
-                              </li>
-                              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                              <li><a href="#"><i class="fa fa-github"></i></a></li>
-                            </ul>
-                        </div>
+                      </div><!-- End of modal-footer -->
                     </div>
-                
-            </div><!-- End of Container -->         
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- end of container -->
+
+          <div class="container-fluid">
+            <div class="row social-row">
+              <div class="col-md-2">
+                  <span class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>2017</span>
+              </div>
+
+              <div class="col-md-10">
+                <ul class="list-inline social-buttons">
+                  <li><a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa fa-github"></i></a></li>
+                </ul>
+              </div>
+            </div><!-- End of Row --> 
+          </div><!-- End of Container -->     
         </section>
         <p id="back-top">
           <a href="#top"><span></span></a>

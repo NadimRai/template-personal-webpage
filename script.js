@@ -43,7 +43,7 @@ $(document).ready(function(){
     // fade in #back-top
     $(function () {
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 2600) {
+            if ($(this).scrollTop() > 2400) {
                 $('#back-top').fadeIn();
             } else {
                 $('#back-top').fadeOut();

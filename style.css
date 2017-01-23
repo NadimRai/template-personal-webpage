@@ -240,47 +240,60 @@ section#contact {
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 50px;
- 
-  
-  
-}
-#contact .form{
-    margin:20px auto;
-}
+  border-top:1px solid red;
 
-section#contact .form-group {
-  margin-bottom: 25px;
 }
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
+.fa-hand-o-down{
+  margin-left: 25px;
+  color:#f63;
 }
-section#contact .form-group input.form-control {
-  height: auto;
-}
-section#contact .form-group textarea.form-control {
-  height: 236px;
-}
-
-section#contact .form-control {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: normal;
-  color:#222222;
-  font-size: 16px;
-}
-
-.btn-xl {
+.modal-content h2{
   color: white;
-  background-color: #f63;
-  border-color: #f63;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 8px;
-  font-size: 18px;
-  padding: 20px 40px;
 }
+.contact-title{
+    margin-bottom: 15px; 
+}
+
+.icons-container ul li {
+    display: inline-block;
+    width: 4.2em;
+    height: 4.2em;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0.25em;
+    line-height: 3.5em;
+    color: #999;
+    transition: 1s 0s linear;
+    text-decoration: none;
+}
+
+.icon-list{
+    padding:0px;
+}
+
+#btn-send-message{
+    width: 100%;
+}
+
+.line-separator{
+    border-bottom:1px solid #CDC1C5;
+}
+.box-separator{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icon-separator{
+    border-bottom: 2px solid orange;
+}
+
+.modal-body{
+  background: url('assets/images/riddler.jpg') no-repeat;
+  
+  
+ }
+
 /********* Social Row *************/
 .social-row {
   padding: 25px 0 25px 35px;
@@ -293,7 +306,7 @@ section#contact .form-control {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:18px;
-  color: #eaeaea;
+  color: #222222;
 }
 
 
@@ -415,3 +428,4 @@ ul.social-buttons li a:active {
 #back-top a:hover span {
   background-color: #00bfab;
 }
+
