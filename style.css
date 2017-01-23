@@ -5,13 +5,13 @@
 body{
 	font-family: 'Roboto', sans-serif;
 }
-/*#wrapper {
+.wrapper {
     max-width: 1200px;
-    margin: 0 auto;
-}*/
+    
+}
 /******** Navigation Bar ***********/
 
-#header {
+.header {
     margin: 0 auto;
     max-width: 1200px;
     height: 50px;
@@ -85,19 +85,14 @@ body{
     text-align: center;
 }
 
-.section article {
-    background-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 20px;
-    margin: 0 10px;
-}
+
 
 /********* End of Section ******************/
 /************ Section Cover *********************/
 #cover {
      background-image: url('assets/images/bg.jpg');
      background-image: cover;
+     border-bottom: 1px solid #f63;
 }
 .responsive-text{
     display: none;
@@ -127,6 +122,9 @@ section .intro-heading {
 /********** End of Cover ************/
 
 /************* Section Profile ********/
+#profile{
+  background-color: #ffffff;
+}
 .profile-row{
     
     width:80%;
@@ -238,7 +236,7 @@ section .intro-heading {
 
 /******** Section Contact **************/
 section#contact {
-  background: url('assets/images/mapnight.jpeg');
+  /*background: url('assets/images/mapnight.jpeg');*/
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 50px;
@@ -381,4 +379,39 @@ ul.social-buttons li a:active {
 
 .fixPoint {
     background-attachment: fixed;
+}
+/*********************************************/
+#back-top {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+}
+#back-top a {
+  width: 40px;
+  display: block;
+  color: #bbb;
+  /* background color transition */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+#back-top a:hover {
+  color: #000;
+}
+/* arrow icon */
+#back-top span {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-bottom: 7px;
+  background: #26456e  url(assets/images/up-arrow.png) no-repeat center center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+#back-top a:hover span {
+  background-color: #00bfab;
 }
